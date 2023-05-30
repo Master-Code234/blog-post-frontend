@@ -1,21 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import './styles/App.css'
-
-
-// Component Imports
-import Form from './components/Form'
+// Page Imports
+import PostPage from "./pages/postPage";
+import AllPostPage from "./pages/AllPostPage";
+import EditPost from "./pages/editPage";
 
 function App() {
-  
-
   return (
     <div className="App">
-      <Form/>
-      
+      <Router>
+        <Routes>
+          <Route path="/" element={<AllPostPage />} />
+          <Route path="/:id" element={<PostPage />} />
+          <Route path="/:id/edit" element={<EditPost />} />
+        </Routes>
+      </Router>
     </div>
-    
-  
-  )
+  );
 }
 
-export default App
+export default App;
