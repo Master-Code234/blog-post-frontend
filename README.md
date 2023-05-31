@@ -36,6 +36,29 @@ CSS file for each page.
     5. Now in the terminal cd into the folder that was cloned from Github
     6. In the terminal type npm install
     7. Now in the terminal type npm run dev to launch the site
+ 
+ ## Future Enhancements
+ 
+ ### Captcha Authentication
+ 
+ - Fully functional Authentication System that allows users to **SignIn** , **SignUp**  and **SignOut** will use captcha to minimize bot accounts
+ 
+ ### Delete All Post
+ 
+  - Allow the user to delete all of there post on the web page after prompting for their password 
+
+ ### Direct Messages 
+ 
+ - Allow the user to send a dm to another user
+
+### Date And Time Of post
+
+- This feature will save the hour, minute day, year and month of the post 
+
+### Replies, Likes, Dislikes
+
+- This feature will allow other users to reply to their post and leave a like or dislike
+ 
     
     
     
