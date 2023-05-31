@@ -1,0 +1,23 @@
+.show-post-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.button-wrapper{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.home-btn, .edit-btn, .delete-btn {
+    cursor: pointer;
+    padding: 0.7em;
+    border-radius: 0.2em;
+    border: none;
+}
+
+

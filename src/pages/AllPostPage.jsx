@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import CreatePostPage from "./createPostPage";
 import { Link } from "react-router-dom";
 
+import "../styles/AllPostPage.css";
+
 export default function AllPostPage() {
   const [allPost, setAllPost] = useState([]);
   useEffect(() => {
@@ -10,14 +12,17 @@ export default function AllPostPage() {
   }, []);
 
   return (
-    <div>
+    <div className="showAllPost">
       <h1>All Post</h1>
+
       <ul>
         {allPost.map((post) => {
           return (
-            <div>
-              <button>
-                <Link to={`/${post._id}`}>{post.content}</Link>
+            <div className="post-container">
+              <button className="post">
+                <Link className="post-link" to={`/${post._id}`}>
+                  {post.content}
+                </Link>
               </button>
             </div>
           );

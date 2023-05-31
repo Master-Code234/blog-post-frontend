@@ -1,0 +1,13 @@
+.edit-post-page {
+    color: #fff;
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.post-page-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

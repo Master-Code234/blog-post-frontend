@@ -1,0 +1,52 @@
+.showAllPost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+ .post {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 0.7em;
+  border: none;
+  min-width: 50em;
+  max-width: 100em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ background-color: rgb(248, 248, 248);
+}
+
+.post-link {
+  text-decoration: none;
+  color: #040404;
+  font-size: 2em;
+}
+
+.post-btn {
+  cursor: pointer;
+  background-color: #ebebeb;
+  padding: 0.5em;
+  color: #121212;
+  border: none;
+}
+
+.post-input {
+  padding: 0.4em;
+  border: none;
+}

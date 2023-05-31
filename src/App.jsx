@@ -1,9 +1,10 @@
+import "./styles/App.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Page Imports
-import PostPage from "./pages/postPage";
+import PostPage from "./pages/ShowPostPage";
 import AllPostPage from "./pages/AllPostPage";
-import EditPost from "./pages/editPage";
+import EditPost from "./pages/EditPostPage";
 
 function App() {
   return (
