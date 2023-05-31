@@ -1,6 +1,6 @@
 import { getAllPost } from "../services/blogPost-api";
 import { useState, useEffect } from "react";
-import CreatePostPage from "./createPostPage";
+import CreatePostPage from "./CreatePostPage";
 import { Link } from "react-router-dom";
 
 import "../styles/AllPostPage.css";
