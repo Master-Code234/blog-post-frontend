@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Connect to backend Server
 
-const base_URL = "http://localhost:3001/blogPost";
+const base_URL = "https://master-codes-blog-post-backend.onrender.com/blogPost";
 
 // Display All
 

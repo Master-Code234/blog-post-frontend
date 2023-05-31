@@ -23,7 +23,7 @@ export default function AllPostPage() {
       <ul>
         {allPost.map((post) => {
           return (
-            <div className="post-container">
+            <div key={post._id} className="post-container">
               <button className="post">
                 <Link className="post-link" to={`/${post._id}`}>
                   {post.content}
