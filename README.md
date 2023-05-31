@@ -21,6 +21,23 @@ CSS file for each page.
     - Axios
     - vite
     
+## Backend Code
+
+[Check out the backend code for this project](https://github.com/Master-Code234/blog-post-backend)
+
+
+## Installation Instructions
+
+    1. Open VsCode or any code editor
+    2. Open a git bash terminal 
+    3. Go to the green button on my Github Click copy url
+    4. In the terminal Type git clone + the url 
+    5. Now in the terminal cd into the folder that was cloned from Github
+    6. In the terminal type npm install
+    7. Now in the terminal type npm run dev to launch the site
+    
+    
+    
 
   
 
