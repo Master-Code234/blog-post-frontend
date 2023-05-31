@@ -6,9 +6,11 @@ export default function CreatePost() {
   const nav = useNavigate();
 
   const createNewPost = async (e) => {
+    e.preventDefault()
     try {
       const post = { content: e.target.content.value };
-      await createPost(post).then(() => nav("/"));
+      console.log(post);
+      await createPost(post).then(() => window.location.reload(false));
     } catch (error) {
       console.error(error);
     }
@@ -19,9 +21,7 @@ export default function CreatePost() {
       <h4>Create a New Post</h4>
       <form onSubmit={createNewPost}>
         <input className="post-input" type="text" name="content" required />
-        <button className="post-btn" type="submit">
-          Post
-        </button>
+        <input type="submit" />
       </form>
     </div>
   );

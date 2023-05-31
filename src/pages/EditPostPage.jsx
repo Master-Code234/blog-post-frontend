@@ -16,8 +16,7 @@ export default function EditPost() {
   const editThePost = (e) => {
     e.preventDefault();
     const updatedPost = { content: e.target.content.value };
-    editPost(id, updatedPost);
-    nav(`/${id}`);
+    editPost(id, updatedPost).then(() => nav(`/${id}`));
   };
   return (
     <div className="edit-post-page">
