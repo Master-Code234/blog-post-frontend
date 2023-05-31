@@ -7,4 +7,25 @@ down into separate pages and began coding the content for each page. Once I comp
 CSS to the project. To help ensure an organized and maintainable website code structure I created a separate CSS styles folder and created a new 
 CSS file for each page. 
 
+## Live Site 
+
+[Live Site on Render](https://master-codes-blog-post-frontend.onrender.com/)
+
+## Technologies Used
+    
+    - React JS
+    - Node JS
+    - React Router DOM
+    - MongoDB
+    - Mongoose (6.11.1)
+    - Axios
+    - vite
+    
+
+  
+
+
+
+
+
 
