@@ -12,8 +12,8 @@ export default function ShowPost() {
     getPost(id).then((res) => setPost(res.data));
   }, []);
 
-  const deleteThePost = () => {
-    deletePost(id);
+  const deleteThePost = async () => {
+    await deletePost(id);
     nav("/");
   };
 

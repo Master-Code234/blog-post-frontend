@@ -26,7 +26,7 @@ export const getPost = async (id) => {
   }
 };
 
-// Edit Post 
+// Edit Post
 
 export const editPost = async (id, updatedPost) => {
   try {
@@ -48,7 +48,7 @@ export const createPost = async (data) => {
   }
 };
 
-// Delete Post 
+// Delete Post
 
 export const deletePost = async (id) => {
   try {
