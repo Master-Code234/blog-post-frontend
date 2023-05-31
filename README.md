@@ -19,6 +19,7 @@ CSS file for each page.
     - MongoDB
     - Mongoose (6.11.1)
     - Axios
+    - CSS
     - vite
     
 ## Backend Code
