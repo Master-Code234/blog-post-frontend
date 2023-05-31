@@ -23,8 +23,14 @@ export default function EditPost() {
     <div className="edit-post-page">
       <form className="post-page-form" onSubmit={editThePost}>
         <h1>Edit Post</h1>
-        Content:
-        <input type="text" name="content" defaultValue={data.content} />
+        <label htmlFor="post">Content</label>
+        <textarea
+          name="content"
+          id="post"
+          cols="30"
+          rows="10"
+          defaultValue={data.content}
+        ></textarea>
         <button type="submit">Save</button>
         <button>Cancel</button>
       </form>

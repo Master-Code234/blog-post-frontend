@@ -18,7 +18,7 @@ export default function CreatePost() {
     <div className="postPage">
       <h4>Create a New Post</h4>
       <form onSubmit={createNewPost}>
-        <input className="post-input" type="text" name="content" />
+        <input className="post-input" type="text" name="content" required />
         <button className="post-btn" type="submit">
           Post
         </button>

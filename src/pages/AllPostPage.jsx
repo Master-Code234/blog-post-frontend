@@ -7,13 +7,18 @@ import "../styles/AllPostPage.css";
 
 export default function AllPostPage() {
   const [allPost, setAllPost] = useState([]);
+  const [postCount, setPostCount] = useState(0);
   useEffect(() => {
-    getAllPost().then((res) => setAllPost(res.data));
+    getAllPost().then((res) => {
+      setAllPost(res.data);
+      setPostCount(res.data.length);
+    });
   }, []);
 
   return (
     <div className="showAllPost">
       <h1>All Post</h1>
+      <p>Post Count: {postCount}</p>
 
       <ul>
         {allPost.map((post) => {

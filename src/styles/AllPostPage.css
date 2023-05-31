@@ -5,6 +5,7 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  color: #ffffff;
 
 }
 
@@ -34,7 +35,7 @@ ul {
 
 .post-link {
   text-decoration: none;
-  color: #040404;
+  color: #131313;
   font-size: 2em;
 }
 
