@@ -58,6 +58,10 @@ CSS file for each page.
 ### Replies, Likes, Dislikes
 
 - This feature will allow other users to reply to their post and leave a like or dislike
+
+## SearchBar
+
+- This feature will allow users to search for a specfic post
  
     
     
