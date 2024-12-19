@@ -1,11 +1,9 @@
 import axios from "axios";
 
 // Connect to backend Server
-
-const base_URL = "https://master-codes-blog-post-backend.onrender.com/blogPost";
+const base_URL = import.meta.env.VITE_BACKEND_URL;
 
 // Display All
-
 export const getAllPost = async () => {
   try {
     const response = await axios.get(base_URL);
@@ -16,7 +14,6 @@ export const getAllPost = async () => {
 };
 
 // Display one
-
 export const getPost = async (id) => {
   try {
     const response = await axios.get(`${base_URL}/${id}`);
@@ -27,7 +24,6 @@ export const getPost = async (id) => {
 };
 
 // Edit Post
-
 export const editPost = async (id, updatedPost) => {
   try {
     const response = await axios.put(`${base_URL}/${id}`, updatedPost);
@@ -38,7 +34,6 @@ export const editPost = async (id, updatedPost) => {
 };
 
 // Create Post
-
 export const createPost = async (data) => {
   try {
     const response = await axios.post(base_URL, data);
@@ -49,7 +44,6 @@ export const createPost = async (data) => {
 };
 
 // Delete Post
-
 export const deletePost = async (id) => {
   try {
     const response = await axios.delete(`${base_URL}/${id}`);
