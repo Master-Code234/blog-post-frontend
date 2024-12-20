@@ -1,3 +1,16 @@
 .postPage {
-    padding: 1rem;
+  padding: 1rem;
+}
+
+.post-submit {
+  cursor: pointer;
+  background-color: #ebebeb;
+  padding: 0.5em;
+  color: #121212;
+  border: none;
+}
+
+.post-input {
+  padding: 0.4em;
+  border: none;
 }
