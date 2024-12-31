@@ -7,7 +7,7 @@ const base_URL = import.meta.env.VITE_BACKEND_URL;
 export const getAllPost = async () => {
   try {
     const response = await axios.get(base_URL);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -17,7 +17,7 @@ export const getAllPost = async () => {
 export const getPost = async (id) => {
   try {
     const response = await axios.get(`${base_URL}/${id}`);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -27,7 +27,7 @@ export const getPost = async (id) => {
 export const editPost = async (id, updatedPost) => {
   try {
     const response = await axios.put(`${base_URL}/${id}`, updatedPost);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -37,7 +37,7 @@ export const editPost = async (id, updatedPost) => {
 export const createPost = async (data) => {
   try {
     const response = await axios.post(base_URL, data);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
